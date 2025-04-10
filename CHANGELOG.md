@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/jmckenzie17/semantic-version-2/compare/4.0.0...4.0.1) (2025-04-10)
+
+
+### Bug Fixes
+
+* fix foo ([ca7d925](https://github.com/jmckenzie17/semantic-version-2/commit/ca7d925abb45821eb713134e4a70c1460bb2d857))
+
 # [4.0.0](https://github.com/jmckenzie17/semantic-version-2/compare/3.1.1...4.0.0) (2025-04-10)
 
 
