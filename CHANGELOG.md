@@ -1,3 +1,17 @@
+# [6.0.0](https://github.com/jmckenzie17/semantic-version-2/compare/5.0.0...6.0.0) (2025-04-10)
+
+
+### Features
+
+* foo6 ([284930b](https://github.com/jmckenzie17/semantic-version-2/commit/284930b436a46b30717541bfe6d968e8008eb9ec))
+* foo6 with comment ([5964fc2](https://github.com/jmckenzie17/semantic-version-2/commit/5964fc2ccf9ca0131db9f0efe1c0901df514da6f))
+
+
+### BREAKING CHANGES
+
+* comment added
+* make it 6
+
 # [5.0.0](https://github.com/jmckenzie17/semantic-version-2/compare/4.0.0...5.0.0) (2025-04-10)
 
 
