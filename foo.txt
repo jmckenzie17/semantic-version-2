@@ -1,2 +1,2 @@
 # comment
-foo5
+foo6
