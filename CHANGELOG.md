@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/jmckenzie17/semantic-version-2/compare/3.1.1...4.0.0) (2025-04-10)
+
+
+### Features
+
+* foo2 ([cbfc484](https://github.com/jmckenzie17/semantic-version-2/commit/cbfc4844c50d4b19446b5d5d07fe255c24d7a66d))
+
+
+### BREAKING CHANGES
+
+* changing it to the number 2
+
 ## [3.1.1](https://github.com/jmckenzie17/semantic-version-2/compare/3.1.0...3.1.1) (2025-04-10)
 
 
