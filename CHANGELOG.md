@@ -1,3 +1,15 @@
+# [3.1.0](https://github.com/jmckenzie17/semantic-version-2/compare/3.0.0...3.1.0) (2025-04-10)
+
+
+### Bug Fixes
+
+* add comment ([25bc4a9](https://github.com/jmckenzie17/semantic-version-2/commit/25bc4a98575aadca9b80ff15359fb63b8433f22f))
+
+
+### Features
+
+* foo1 feature ([50e292d](https://github.com/jmckenzie17/semantic-version-2/commit/50e292d2b9bb04b0f8c51f171ed2e536ec34b5e9))
+
 # [3.0.0](https://github.com/jmckenzie17/semantic-version-2/compare/2.3.0...3.0.0) (2025-04-10)
 
 
