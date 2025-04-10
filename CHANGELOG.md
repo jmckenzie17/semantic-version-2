@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/jmckenzie17/semantic-version-2/compare/2.0.0...2.1.0) (2025-04-10)
+
+
+### Features
+
+* 2.1.0 ([53e14c9](https://github.com/jmckenzie17/semantic-version-2/commit/53e14c9a2f6dd4eb49706430810086b2f1cfa5ce))
+
 # [2.0.0](https://github.com/jmckenzie17/semantic-version-2/compare/1.2.0...2.0.0) (2025-04-10)
 
 
