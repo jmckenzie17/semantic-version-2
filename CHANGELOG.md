@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/jmckenzie17/semantic-version-2/compare/3.1.0...3.1.1) (2025-04-10)
+
+
+### Bug Fixes
+
+* remove comment ([8c8d7d3](https://github.com/jmckenzie17/semantic-version-2/commit/8c8d7d3347d56e0607d55773da637a8734a3b1c6))
+
 # [3.1.0](https://github.com/jmckenzie17/semantic-version-2/compare/3.0.0...3.1.0) (2025-04-10)
 
 
