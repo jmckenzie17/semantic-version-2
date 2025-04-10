@@ -1,3 +1,10 @@
+## [3.1.2](https://github.com/jmckenzie17/semantic-version-2/compare/3.1.1...3.1.2) (2025-04-10)
+
+
+### Bug Fixes
+
+* hotfix a bugfix ([3075111](https://github.com/jmckenzie17/semantic-version-2/commit/30751118da6facfa9f40a55690e0a1b6add19ae5))
+
 ## [3.1.1](https://github.com/jmckenzie17/semantic-version-2/compare/3.1.0...3.1.1) (2025-04-10)
 
 
