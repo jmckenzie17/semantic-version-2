@@ -1,3 +1,10 @@
+## [6.1.1](https://github.com/jmckenzie17/semantic-version-2/compare/6.1.0...6.1.1) (2025-04-10)
+
+
+### Bug Fixes
+
+* whatever ([85ffd72](https://github.com/jmckenzie17/semantic-version-2/commit/85ffd7239872cb6179dce777b732f7cf6cb1948f))
+
 # [6.1.0](https://github.com/jmckenzie17/semantic-version-2/compare/6.0.0...6.1.0) (2025-04-10)
 
 
