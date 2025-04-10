@@ -1,1 +1,2 @@
-foo 3.0.0
+# comments are important
+foo1
