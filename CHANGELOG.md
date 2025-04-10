@@ -1,3 +1,13 @@
+# [5.0.0](https://github.com/jmckenzie17/semantic-version-2/compare/4.0.0...5.0.0) (2025-04-10)
+
+
+* feat!: testing breaking change ([30869c0](https://github.com/jmckenzie17/semantic-version-2/commit/30869c0bcc41d6a546ac6ac7437f294320aabd25))
+
+
+### BREAKING CHANGES
+
+* test
+
 # [4.0.0](https://github.com/jmckenzie17/semantic-version-2/compare/3.1.1...4.0.0) (2025-04-10)
 
 
