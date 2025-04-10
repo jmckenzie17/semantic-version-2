@@ -1,3 +1,15 @@
+# [7.0.0](https://github.com/jmckenzie17/semantic-version-2/compare/6.1.1...7.0.0) (2025-04-10)
+
+
+### Features
+
+* foo8 ([d783b23](https://github.com/jmckenzie17/semantic-version-2/commit/d783b231489274cc3367e50f50efd5780bbdf8e5))
+
+
+### BREAKING CHANGES
+
+* change to 8
+
 ## [6.1.1](https://github.com/jmckenzie17/semantic-version-2/compare/6.1.0...6.1.1) (2025-04-10)
 
 
