@@ -5,14 +5,15 @@
   ],
   "plugins": [
     "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
     [
-      "@semantic-release/github",
+      "@semantic-release/git",
       {
-        "assets": null
+        "assets": [
+          "CHANGELOG.md"
+        ]
       }
-    ]
-
+    ],
+    "@semantic-release/github"
   ],
   "tagFormat": "${version}"
 }
