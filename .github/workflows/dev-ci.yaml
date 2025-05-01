@@ -14,5 +14,5 @@ jobs:
         with:
           persist-credentials: false
       - name: Generate Tag
-        run: echo ${{ github.ref }}-${{github.run_number}}
+        run: echo ${{ github.ref_name }}-${{github.run_number}}
         
