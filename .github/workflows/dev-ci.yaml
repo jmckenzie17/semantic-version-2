@@ -1,9 +1,15 @@
 name: dev-ci
 on:
-  push:
+  pull_request:
+    types:
+      - opened
     branches:
       - feature/**
-      - hotfix/**
+
+  # push:
+  #   branches:
+  #     - feature/**
+  #     - hotfix/**
 
 jobs:
   main:
