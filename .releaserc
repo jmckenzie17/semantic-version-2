@@ -4,7 +4,13 @@
     "+([0-9])?(.{+([0-9]),x}).x",
     {
       "name": "feature/**",
-      "prerelease": "${name.split('/').slice(0, 2).join('-').toLowerCase()}"
+      "prerelease": "${name.split('/').slice(0, 2).join('-').toLowerCase()}",
+      "channel": "feature"
+    },
+    {
+      "name": "hotfix/**",
+      "prerelease": "${name.split('/').slice(0, 2).join('-').toLowerCase()}",
+      "channel": "hotfix"
     }
   ],
   "plugins": [
