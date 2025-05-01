@@ -4,11 +4,11 @@
     "+([0-9])?(.{+([0-9]),x}).x",
     {
       "name": "hotfix/**",
-      "prerelease": false
+      "prerelease": true
     },
     {
       "name": "feature/**",
-      "prerelease": false
+      "prerelease": true
     }
   ],
   "plugins": [
