@@ -1,10 +1,6 @@
 name: dev-ci
 on:
   pull_request:
-    types:
-      - opened
-    branches:
-      - feature/**
 
   # push:
   #   branches:
