@@ -1,9 +1,11 @@
 name: dev-ci
 on:
-  push:
-    branches:
-      - feature/**
-      - hotfix/**
+  pull_request:
+
+  # push:
+  #   branches:
+  #     - feature/**
+  #     - hotfix/**
 
 jobs:
   main:
