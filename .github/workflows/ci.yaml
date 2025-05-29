@@ -45,6 +45,10 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: false
+      
+      - name: create .releaserc file
+        run: |
+          echo '{"plugins":["@semantic-release/commit-analyzer","@semantic-release/release-notes-generator","@semantic-release/git","@semantic-release/github"]}' > .releaserc
 
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v4
@@ -57,9 +61,4 @@ jobs:
               "main",
               "+([0-9])?(.{+([0-9]),x}).x"
             ]
-          extra_plugins: |
-              @semantic-release/commit-analyzer
-              @semantic-release/release-notes-generator
-              @semantic-release/git
-              @semantic-release/github
           tag_format: "${version}"
