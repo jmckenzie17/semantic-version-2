@@ -1,23 +1,65 @@
-name: ci
+# name: ci
+# on:
+#   push:
+#     branches:
+#       - main
+
+# jobs:
+#   main:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4
+#         with:
+#           persist-credentials: false
+#       - name: Semantic Release
+#         id: semantic
+#         uses: cycjimmy/semantic-release-action@v4
+#         env:
+#           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+#       - name: Display new release version
+#         if: steps.semantic.outputs.new_release_published == 'true'
+#         run: |
+#           echo ${{ steps.semantic.outputs.new_release_version }}
+
+name: "Create Release"
+
 on:
   push:
     branches:
       - main
+      - hotfix/**
+
+#Special permissions required for OIDC authentication
+permissions:
+  id-token: write
+  contents: read
+  pull-requests: write
 
 jobs:
-  main:
+  semver:
+    name: "version and tag repo"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           persist-credentials: false
+
       - name: Semantic Release
-        id: semantic
         uses: cycjimmy/semantic-release-action@v4
+        id: semantic
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-      - name: Display new release version
-        if: steps.semantic.outputs.new_release_published == 'true'
-        run: |
-          echo ${{ steps.semantic.outputs.new_release_version }}
+        with:
+          branches: |
+            [
+              "main",
+              "+([0-9])?(.{+([0-9]),x}).x"
+            ]
+          extra_plugins: |
+              @semantic-release/commit-analyzer
+              @semantic-release/release-notes-generator
+              @semantic-release/git
+              @semantic-release/github
+          tag_format: "${version}"
