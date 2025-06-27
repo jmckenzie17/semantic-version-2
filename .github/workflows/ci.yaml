@@ -4,7 +4,8 @@ run-name: "build and deploy"
 on:
   push:
     branches:
-      - main
+      - 'main'
+      - '*.x'
 
 #Special permissions required for OIDC authentication
 permissions:
