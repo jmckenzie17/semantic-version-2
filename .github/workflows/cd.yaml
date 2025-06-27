@@ -1,4 +1,4 @@
-name: "Build and Deploy"
+name: "cd"
 run-name: ${{ github.ref_name }}
 on:
   push:
