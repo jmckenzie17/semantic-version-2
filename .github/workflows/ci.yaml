@@ -39,9 +39,10 @@ jobs:
             ]
           tag_format: "${version}"
       - name: Upload Artifact
+        if: steps.semantic.outputs.new_release_published == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: foo
+          name: ${{ steps.semantic.outputs.new_release_version }}
           path: ./foo.txt
           if-no-files-found: error
           retention-days: 10
