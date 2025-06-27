@@ -41,6 +41,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.env }}
-          path: ./clusters/${{ matrix.env }}/${{ env.BUILD_FILE_NAME }}
+          path: ./foo.txt
           if-no-files-found: error
           retention-days: 10
