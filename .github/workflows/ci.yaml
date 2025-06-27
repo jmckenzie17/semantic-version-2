@@ -1,5 +1,5 @@
 name: "ci"
-run-name: "build and deploy"
+run-name: "create release and tag repo"
 
 on:
   push:

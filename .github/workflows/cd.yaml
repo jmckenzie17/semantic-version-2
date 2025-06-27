@@ -1,5 +1,6 @@
 name: "cd"
-run-name: "create release and tag repo"
+run-name: "build and deploy"
+
 on:
   push:
     tags:
