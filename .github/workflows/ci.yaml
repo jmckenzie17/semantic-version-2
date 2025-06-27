@@ -1,5 +1,5 @@
 name: "ci"
-run-name: "ci: ${{ github.ref_name }}"
+run-name: "build and deploy"
 
 on:
   push:
