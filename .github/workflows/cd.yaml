@@ -1,0 +1,14 @@
+name: "Build and Deploy"
+
+on:
+  push:
+    tags:
+      - '*'
+
+permissions: read-all
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "building ${{ github.ref_name }}"

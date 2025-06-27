@@ -1,34 +1,9 @@
-# name: ci
-# on:
-#   push:
-#     branches:
-#       - main
-
-# jobs:
-#   main:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v4
-#         with:
-#           persist-credentials: false
-#       - name: Semantic Release
-#         id: semantic
-#         uses: cycjimmy/semantic-release-action@v4
-#         env:
-#           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-#       - name: Display new release version
-#         if: steps.semantic.outputs.new_release_published == 'true'
-#         run: |
-#           echo ${{ steps.semantic.outputs.new_release_version }}
-
 name: "Create Release"
 
 on:
   push:
     branches:
       - main
-      - hotfix/**
 
 #Special permissions required for OIDC authentication
 permissions:
@@ -62,3 +37,10 @@ jobs:
               "+([0-9])?(.{+([0-9]),x}).x"
             ]
           tag_format: "${version}"
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.env }}
+          path: ./clusters/${{ matrix.env }}/${{ env.BUILD_FILE_NAME }}
+          if-no-files-found: error
+          retention-days: 10
